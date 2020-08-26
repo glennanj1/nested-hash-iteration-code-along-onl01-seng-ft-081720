@@ -15,5 +15,7 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-  contacts["Freddy Mercury"]
+  contacts["Freddy Mercury"].each do |person, attribute|
+    if attribute favorite_ice_cream_flavors == "strawberry"
+      favorite_ice_cream_flavors.unshift(strawberry)
 end
